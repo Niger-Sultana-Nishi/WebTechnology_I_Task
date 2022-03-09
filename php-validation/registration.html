@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <h1>Registration form</h1>
+    <form action="RegistrationAction.php" method="POST">
+        <fieldset>
+            <legend>Basic Information: </legend>
+            <label>First Name:</label>
+            <input type="text" name="firstname">
+             <span class="error">*
+                        <?php if(isset($firstnameErr)){ ?>
+                        <p class="error"><?php echo $firstnameErr ?></p>
+                        <?php } ?>
+                    </span>
+            <br><br>
+            <label>Last Name:</label> 
+            <input type="text" name="lastname">
+            <span class="error">*
+                        <?php if(isset($lastnameErr)){ ?>
+                        <p class="error"><?php echo $lastnameErr ?></p>
+                        <?php } ?>
+                    </span>
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="Other">Other
+            <span class="error">*
+                    <?php if(isset($genderErr)){ ?>
+                    <p class="error"><?php echo $genderErr ?></p>
+                    <?php } ?>
+            <br><br>
+            <label>Date of Birth:</label>
+            <input type="date" name="dateofbirth">
+             <span class="error">*
+                        <?php if(isset($dateofbirthErr)){ ?>
+                        <p class="error"><?php echo $dateofbirthErr ?></p>
+                        <?php } ?>
+                    </span>
+            <br><br>
+            <label>Religion</label>
+            <select name="religion">
+                <option value="Islam">Islam</option>
+                <option value="Hinduism">Hinduism</option>
+                <option value="Christianity">Christianity</option>
+                <option value="Buddhism">Buddhism</option>
+            </select>
+            <span class="error">*
+                        <?php if(isset($religionErr)){ ?>
+                        <p class="error"><?php echo $religionErr ?></p>
+                        <?php } ?>
+                    </span>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information:</legend>
+            <label>Present Address: </label>
+            <textarea id="present" name="present" rows="2">
+            </textarea>
+             <span class="error">*
+                            <?php if(isset($presentErr)){ ?>
+                            <p class="error"><?php echo $presentErr ?></p>
+                            <?php } ?>
+                        </span>
+            <br><br>
+            <label>Permanent Address: </label>
+            <textarea id="permanent" name="permanent" rows="2">
+            </textarea>
+            <span class="error">*
+                            <?php if(isset($permanentErr)){ ?>
+                            <p class="error"><?php echo $permanentErr ?></p>
+                            <?php } ?>
+                        </span>
+            <br><br>
+            <label>Phone: </label>
+            <input type="tel"  name="phone">
+             <span class="error">*
+                            <?php if(isset($phoneErr)){ ?>
+                            <p class="error"><?php echo $phoneErr ?></p>
+                            <?php } ?>
+                        </span>
+            <br><br>
+            <label>Email:</label>
+            <input type="mail" name="mail">
+             <span class="error">*
+                            <?php if(isset($phoneErr)){ ?>
+                            <p class="error"><?php echo $phoneErr ?></p>
+                            <?php } ?>
+                        </span>
+            <br><br>
+            <label>Personal Website Link: </label>
+            <input type="url" name="website">
+             <span class="error">*
+                            <?php if(isset($phoneErr)){ ?>
+                            <p class="error"><?php echo $phoneErr ?></p>
+                            <?php } ?>
+                        </span>
+        </fieldset>
+        <fieldset>
+            <legend>Account Information</legend>
+            <label>User Name: </label>
+            <input type="text" name="userName">
+             <span class="error">*
+                        <?php if(isset($usernameErr)){ ?>
+                        <p class="error"><?php echo $usernameErr ?></p>
+                        <?php } ?>
+                    </span>
+            <br><br>
+            <label>Password: </label>
+            <input type="pass" name="pass">
+            <span class="error">*
+                        <?php if(isset($passErr)){ ?>
+                        <p class="error"><?php echo $passErr ?></p>
+                        <?php } ?>
+                    </span>
+            <br><br>
+            <label>Confirm Password: </label>
+            <input type="confirmPass" name="confirmPass">
+            <span class="error">*
+                        <?php if(isset($confirmPassErr)){ ?>
+                        <p class="error"><?php echo $confirmPassErr ?></p>
+                        <?php } ?>
+                    </span>
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
