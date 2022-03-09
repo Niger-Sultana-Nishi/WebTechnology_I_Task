@@ -80,7 +80,7 @@
         
     }
     if (empty($_POST["mail"])) {
-        $mailErr = "E-mail is required";
+        $mailErr = "Email is required";
          $isValid= false;
     }else {
         $mail = test_input($_POST["mail"]);
@@ -177,7 +177,7 @@
     }
 
     else {
-        include('registration.php');
+        include('registration.html');
     }
 
     ?>
