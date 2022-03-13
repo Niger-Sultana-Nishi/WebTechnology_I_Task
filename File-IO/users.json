@@ -1,0 +1,45 @@
+[
+    {
+        "firstname": "Nidra",
+        "lastname": "Sultana",
+        "gender": "female",
+        "dateofbirth": "2022-10-01",
+        "religion": "Islam",
+        "present": "                           Bashundhara",
+        "permanent": "                           Bashundhara    ",
+        "phone": "0177777",
+        "mail": "afrin@gmail.com",
+        "website": "https:\/\/www.ryhb.com",
+        "userName": "Nidra",
+        "pass": "12345",
+        "confirmPass": "12345"
+    },
+    {
+        "firstname": "Nabila",
+        "lastname": "Binte",
+        "gender": "female",
+        "dateofbirth": "2022-03-08",
+        "religion": "Islam",
+        "present": "                \r\n          Badda  ",
+        "permanent": "               Badda \r\n            ",
+        "phone": "01666",
+        "mail": "afrin@gmail.com",
+        "website": "https:\/\/www.ryhb.com",
+        "userName": "Nabila",
+        "pass": "2222"
+    },
+    {
+        "firstname": "Sultana",
+        "lastname": "Hossain",
+        "gender": "female",
+        "dateofbirth": "2022-03-16",
+        "religion": "Islam",
+        "present": "                       badda     ",
+        "permanent": "        badda                    ",
+        "phone": "098927",
+        "mail": "afrin@gmail.com",
+        "website": "https:\/\/www.ryhb.com",
+        "userName": "Maliha",
+        "pass": "123"
+    }
+]
